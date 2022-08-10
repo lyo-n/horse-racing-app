@@ -8,7 +8,6 @@ const cors = require('cors');
 
 const INTERVAL = 1000;
 const PORT = process.env.PORT || 3002;
-console.log("🚀 ~ file: server.js ~ line 10 ~ process.env.PORT", process.env.PORT)
 
 const horses = [
   {
