@@ -1,4 +1,5 @@
 'use strict';
+require('dotenv').config()
 const express = require('express');
 const http = require('http');
 const io = require('socket.io');
@@ -7,6 +8,7 @@ const cors = require('cors');
 
 const INTERVAL = 1000;
 const PORT = process.env.PORT || 3002;
+console.log("🚀 ~ file: server.js ~ line 10 ~ process.env.PORT", process.env.PORT)
 
 const horses = [
   {
